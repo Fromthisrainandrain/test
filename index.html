@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!-- saved from url=(0064)http://acc.mof.gov.cn/qrcapp/search.html?timestamp=1737639780864 -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>审计报告查验</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+  <script>// 防止html缓存
+    function initLocation() {
+      let search = location.search
+      // 如果存在时间戳，判断时间差，如果超过了10分钟则刷新页面
+      // 防止用户将带有时间戳的地址收藏到地址栏后导致的不刷新
+      if (search) {
+        let reg = /(\?|&)timestamp=([^&]*)/
+        let res = reg.exec(search)
+        if (res && res[2]) {
+          let prevTimestamp = Number(res[2])
+          if (!isNaN(prevTimestamp)) {
+            let nowTimestamp = new Date().getTime()
+            if (nowTimestamp - prevTimestamp < 10 * 60 * 1000) {
+              return
+            }
+          }
+        }
+      }
+      reloadPage()
+
+      function reloadPage() {
+        let search = window.location.search
+        let reg = /(\?|&)timestamp=([^&]*)/g
+        if (search && reg.test(search)) {
+          search = search.replace(reg, function ($0, $1, $2) {
+            return $1 + 'timestamp=' + new Date().getTime()
+          })
+        } else if (!search) {
+          search = '?timestamp=' + new Date().getTime()
+        } else {
+          search += '&timestamp=' + new Date().getTime()
+        }
+        location.href = location.pathname + search + location.hash
+      }
+    }
+    initLocation()</script>
+  <link href="/css/chunk-antd.8f6e0355.css" rel="preload" as="style">
+  <link href="/css/search.af4f1589.css" rel="preload" as="style">
+  <link href="/css/chunk-antd.e55fb7b0.js" rel="preload" as="script">
+  <link href="/css/chunk-libs.877e3f48.js" rel="preload" as="script">
+  <link href="/css/chunk-vue.22e791c1.js" rel="preload" as="script">
+  <link href="/css/search.7578bbc7.js" rel="preload" as="script">
+  <link href="/css/chunk-antd.8f6e0355.css" rel="stylesheet">
+  <link href="/css/search.af4f1589.css" rel="stylesheet">
+</head>
+
+<body>
+  <div data-v-34346690="" id="app" class="g-container is-fullscreen">
+    <div data-v-531fec94="" class="m-container pc-wrapper" style="overflow: visible; height: auto;">
+      <div data-v-531fec94="" class="inner-container">
+        <div data-v-531fec94="" class="operate-box">
+          <div data-v-531fec94="" class="operate"><i data-v-531fec94="" class="iconfont iconbangzhuwendang"></i>
+            社会公众用户使用手册 </div>
+          <div data-v-531fec94="" class="backBtn"><i data-v-531fec94="" class="iconfont icontubiaokuozhan-1"
+              style="margin-right: 4px;"></i> 返回 </div>
+        </div>
+        <div data-v-531fec94="" class="title page-title">审计报告查验</div>
+        <div data-v-531fec94="" class="row-box first-row-box">
+          <div data-v-531fec94="" class="search-wrapper">
+            <div data-v-531fec94="" class="search-title"><img data-v-531fec94=""
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAOFQTFRFAAAAAAAAAAD/AFWqAECAKiqAJEmSIECAIECfGjOAJD2SJzuTKECPI0COJD2MJEOSJEGUI0CRJ0COJUGQJUKQJ0KPJkGRI0CRJkGRJEGQJ0GOJUGPJUGRJkCPJUCQJkCQJUGPJUCPJT+OJT+QJUGPJkCPJEGQJkCPJUGQJUCPJUGPJUCQJUCPJkCPJT+PJUGPJUCPJUCQJUCPJECPJUCPJT+PJUCQJUCPJUCPJUCQJUCPJUCPJUCPJT+PJT+QJUCQJT+PJUCPJD+PJUCOJUCPJUCPJECPJD+PJT+PJUCQJUCPCZrhUwAAAEp0Uk5TAAEBAwQGBwgIChUaICQqKissNDc+QkNISk5PUlpkZ2x2kJGRkpSam56gpqersLm5u7y/xMrNztDT09TY4+Xl7O3z9ff4+/z9/f7LcZbYAAAAs0lEQVQYGQXBhyLDUABA0atVKVoaYtYKrza128RMaDz3/z/IOQCkeVlXRVgBADqjRlXjcRegc6+qquMEGKk/F/sHVzM1QNroe7qwkc2vf2kckKtZ/1VflodqoNQJD6rXc286pdbLdlT95E4rKr3lQ/WJZ60p9XtpL+psq/+rBUG9aWfnYY1DNWc1qo+byeL2Eb3TJoUTVf3THq0doDtWVT1rAUASoqo2uwAAgzCt6iJPAf4BrmEtbhqM95AAAAAASUVORK5CYII="
+                alt=""><span data-v-531fec94="" class="title">快捷查验</span><span data-v-531fec94=""
+                class="tip first-tip">输入报告编码可查验“被审计单位名称、出具审计报告事务所名称、审计报告出具日期以及签字注师“信息。</span></div>
+            <div data-v-531fec94="" class="search-input-wrapper"><span data-v-531fec94="">报告编码查验</span>
+              
+              <div data-v-531fec94="" class="children"><span d  ata-v-531fec94=""
+                  class="search-input ant-input-affix-wrapper ant-input-affix-wrapper-lg" style="width: 269px;"><input
+                    placeholder="请输入报告编码" type="text" inputmode="none" class="ant-input ant-input-lg"><span
+                    class="ant-input-suffix"></span></span><button data-v-531fec94="" type="button"
+                  class="ant-btn ant-btn-primary ant-btn-lg"><span>查 验</span></button></div>
+            </div>
+          </div>
+          <div data-v-531fec94="" class="result-wrapper"><!---->
+            <div data-v-531fec94="" class="content">
+              <div data-v-531fec94="" class="default-img"><img data-v-531fec94=""
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAAXNSR0IArs4c6QAAAMNQTFRFAAAAAAAAAAD/AP//AICAAID/AFWqAFX/AKr/VVWqVVX/Var/QIC/QID/M2bMM2b/M5nMM5n/KoDVKoD/JG3bJJLbIIDfQIDfHHHGOXHjOY7jOY7/M4DMM4DmLnToLovoRovoKoDVQIDqQJXqO4nYO4nrN4DbN4DtN5LtM4jdM4juMIDfMIDvMI/fMI/vLYfhPIfhPIfwOYDjOY7jOY7xNobkNobyM4DZM4DmM4zmM4zyMXnnMYbnPYbnOoDcOoDoOovoCX03igAAAEF0Uk5TAAEBAQICAwMDAwMDBAQFBQUFBgYHBwgICQkJCQoKCwsLDAwMDQ0ODg4PDxAQEBARERESEhITExQUFBQVFRUWFha/xOApAAACC0lEQVRIx6WV6VbCMBCFg1AXsIItUFELWKlsylKsphoh7/9U0kxoQpIWe5xfnDv5kplkuEXoKKxuuMTkh8RvQfsM/SG81Y6KIOPbU0Dvk6qxahUBjTU1xC7ML88j1BzvjRzC39G8SJpGop8t2K6Druu0/TEW13BjqupwBgnOM9GZZ+dYeueHPqZXR7oTc32tIRGvyVcT1VfOqJkeJ7rw/v4cf2e5KS9YKY03Okh/VwasyCxX4a8Vmg6Zp7/rvEZp6BI4piYjK9DqaT7tNwndc/nFYJMHSbrYiZPTM7QJgWtbSsod7HLNN7zPeWZSFcoLUzbplRK1TRaXsGdLbSVd6u37MM0tXEBPveK0nhmlI9MALtiKoRBgWNrQp2tCJmyFtNuWCS7AFybkRX1MqLRT8H+FoXlWr90vQNZiniBmTBgXINBtVwhPTMD5hCPemkcTFCcXge4TWfoCx8ojLKJXHtLCOwsNVdigxTUj0YFBj49V7iRLE3HNnaSnyD/cX/SZtLnHxGpixH0kUv2qc3Ar3MhxJZr4FdneppLL2qr3JYfUR/8SpDN3cmTsGnMjpfFiMp5ttA+BxtiYngqNsVblGeSbPkqYFDJWqEKRh+ykkEHV+4Wg8Ih9kE8xe9++9YbPYeB3MpM9zejxbwbXyjMBKs3EqDRDUGkmQqWZR/R35oMRM1QiakFMor0T/wLa396hB6qLngAAAABJRU5ErkJggg=="
+                  alt="">
+                <div data-v-531fec94="" style="margin-top: 10px;">暂无查询结果</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-v-531fec94="" class="row-box second-row-box">
+          <div data-v-531fec94="" class="search-wrapper">
+            <div data-v-531fec94="" class="search-title" style="margin-bottom: 24px;"><img data-v-531fec94=""
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAPCAYAAADUFP50AAAAAXNSR0IArs4c6QAAAY5JREFUOE+tk7FLHGEQxd+bW4sIov+AEEhOI9ilsVHvwCpFCmNxhSBBMJ3eFQGJKcRgQFTOVCkTbAOCJCCCcktSWQgGLDz2wM4mIfGQCJLd74VdE9k7ckeKTPMNzPyYmTfzMZsrnwK4jWt7H/ilh7/95OnLbzyTtBz7Ei4zCgerH5+eMpsrK5XYFkzyyKGgUjz4f+CPi3qhs6tnhVCWpmnIpv602qYijwF1AOhPkoRvJD8Lyt+M06LVtC5/9/8ZJM8E7Se6CMMgCw3iCNip+aUHzWXujKz3mnnjoOTR267Xv345O1y8bFY1zb0l7R3gCpFzb7yM0UWclmGzVinutgTFjkEqfBH4c4+SJhNbtLu57q0a6hNp8EjiyzhsYCi6+KLGAr+01nBJuY35CPxwA0r4boa96y0ghOE5Is4EfnG+8QTL61ch1lrPaByF8MSApWqlWI3h7Eh5AGYLgT832UYcHgg2QbhVEhnnJBrO4TCGDB/HYPp3NG/jE4DZn+g58W5dqLYze3Uv/+p+JL3+BdZzyeznF7X2AAAAAElFTkSuQmCC"
+                alt=""><span data-v-531fec94="" class="title">深度查验</span></div>
+            <div data-v-531fec94="" class="form-item" style="margin-bottom: 32px;"><span data-v-531fec94=""
+                class="label">方式一：</span>
+              <div data-v-531fec94="" class="form-content">
+                <div data-v-531fec94="" class="title">上传审计报告查验</div>
+                <div data-v-531fec94="" class="tip second-tip">上传审计报告除"快捷查验"结果信息外，还可比对上传审计报告与报备报告的一致性。</div>
+                <div data-v-531fec94="" class="tip second-tip" style="color: rgb(255, 0, 0); margin-bottom: 0px;">
+                  警告：本系统严禁上传、处理、传输涉密信息！</div>
+                <div data-v-531fec94="" class="content file-input-wrapper">
+                  <div data-v-531fec94="" class="file-input"><!----><span data-v-531fec94="" class="file-btn-wrapper">
+                      <div class="ant-upload ant-upload-select ant-upload-select-text"><span role="button" tabindex="0"
+                          class="ant-upload"><input type="file" accept="application/pdf,.pdf"
+                            style="display: none;"><button data-v-531fec94="" second="" type="button"
+                            class="uploadCheck ant-btn ant-btn-lg" style="width: 100%;"><i data-v-531fec94=""
+                              class="iconfont iconshangchuan"></i><span>上传审计报告</span></button></span></div>
+                    </span></div><button data-v-531fec94="" type="button"
+                    class="ant-btn ant-btn-primary ant-btn-lg"><span>查 验</span></button>
+                </div>
+              </div>
+            </div>
+            <div data-v-531fec94="" class="form-item"><span data-v-531fec94="" class="label">方式二：</span>
+              <div data-v-531fec94="" class="form-content">
+                <div data-v-531fec94="" class="title">报告编码和财务报表关键指标查验</div>
+                <div data-v-531fec94="" class="content">
+                  <div data-v-531fec94="" class="tip third-tip">输入报告编码和关键指标除"快捷查验"结果信息外，还可比对输入的关键指标与报备指标的一致性。</div>
+                  <div data-v-531fec94="" class="input-item"><span data-v-531fec94=""
+                      class="input-label ant-form-item-required">报告编码</span><span data-v-531fec94=""
+                      class="input-content ant-input-affix-wrapper"><input placeholder="请输入报告编码" type="text"
+                        inputmode="none" class="ant-input"><span class="ant-input-suffix"></span></span>
+                    <div data-v-531fec94="" class="unit"></div>
+                  </div>
+                  <div data-v-531fec94="" class="input-item">
+                    <div data-v-531fec94="" class="input-label ant-form-item-required">资产总额</div>
+                    <div data-v-531fec94="" class="input-content">
+                      <div data-v-531fec94="" precision="2" style="position: relative; height: 32px;">
+                        <div class="ant-input-number">
+                          <div class="ant-input-number-handler-wrap"><span
+                              class="ant-input-number-handler ant-input-number-handler-up " unselectable="unselectable"
+                              role="button" aria-label="Increase Value"><i aria-label="图标: up"
+                                class="anticon anticon-up ant-input-number-handler-up-inner"><svg
+                                  viewBox="64 64 896 896" data-icon="up" width="1em" height="1em" fill="currentColor"
+                                  aria-hidden="true" focusable="false" class="">
+                                  <path
+                                    d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z">
+                                  </path>
+                                </svg></i></span><span class="ant-input-number-handler ant-input-number-handler-down "
+                              unselectable="unselectable" role="button" aria-label="Decrease Value"><i
+                                aria-label="图标: down"
+                                class="anticon anticon-down ant-input-number-handler-down-inner"><svg
+                                  viewBox="64 64 896 896" data-icon="down" width="1em" height="1em" fill="currentColor"
+                                  aria-hidden="true" focusable="false" class="">
+                                  <path
+                                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z">
+                                  </path>
+                                </svg></i></span></div>
+                          <div class="ant-input-number-input-wrap"><input role="spinbutton"
+                              aria-valuemin="-9007199254740991" aria-valuenow="" autocomplete="off"
+                              min="-9007199254740991" step="1" class="ant-input-number-input"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-v-531fec94="" class="unit">元</div>
+                  </div>
+                  <div data-v-531fec94="" class="input-item">
+                    <div data-v-531fec94="" class="input-label ant-form-item-required">负债总额</div>
+                    <div data-v-531fec94="" class="input-content">
+                      <div data-v-531fec94="" precision="2" style="position: relative; height: 32px;">
+                        <div class="ant-input-number">
+                          <div class="ant-input-number-handler-wrap"><span
+                              class="ant-input-number-handler ant-input-number-handler-up " unselectable="unselectable"
+                              role="button" aria-label="Increase Value"><i aria-label="图标: up"
+                                class="anticon anticon-up ant-input-number-handler-up-inner"><svg
+                                  viewBox="64 64 896 896" data-icon="up" width="1em" height="1em" fill="currentColor"
+                                  aria-hidden="true" focusable="false" class="">
+                                  <path
+                                    d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z">
+                                  </path>
+                                </svg></i></span><span class="ant-input-number-handler ant-input-number-handler-down "
+                              unselectable="unselectable" role="button" aria-label="Decrease Value"><i
+                                aria-label="图标: down"
+                                class="anticon anticon-down ant-input-number-handler-down-inner"><svg
+                                  viewBox="64 64 896 896" data-icon="down" width="1em" height="1em" fill="currentColor"
+                                  aria-hidden="true" focusable="false" class="">
+                                  <path
+                                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z">
+                                  </path>
+                                </svg></i></span></div>
+                          <div class="ant-input-number-input-wrap"><input role="spinbutton"
+                              aria-valuemin="-9007199254740991" aria-valuenow="" autocomplete="off"
+                              min="-9007199254740991" step="1" class="ant-input-number-input"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-v-531fec94="" class="unit">元</div>
+                  </div>
+                  <div data-v-531fec94="" class="input-item">
+                    <div data-v-531fec94="" class="input-label ant-form-item-required">收入总额</div>
+                    <div data-v-531fec94="" class="input-content">
+                      <div data-v-531fec94="" precision="2" style="position: relative; height: 32px;">
+                        <div class="ant-input-number">
+                          <div class="ant-input-number-handler-wrap"><span
+                              class="ant-input-number-handler ant-input-number-handler-up " unselectable="unselectable"
+                              role="button" aria-label="Increase Value"><i aria-label="图标: up"
+                                class="anticon anticon-up ant-input-number-handler-up-inner"><svg
+                                  viewBox="64 64 896 896" data-icon="up" width="1em" height="1em" fill="currentColor"
+                                  aria-hidden="true" focusable="false" class="">
+                                  <path
+                                    d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z">
+                                  </path>
+                                </svg></i></span><span class="ant-input-number-handler ant-input-number-handler-down "
+                              unselectable="unselectable" role="button" aria-label="Decrease Value"><i
+                                aria-label="图标: down"
+                                class="anticon anticon-down ant-input-number-handler-down-inner"><svg
+                                  viewBox="64 64 896 896" data-icon="down" width="1em" height="1em" fill="currentColor"
+                                  aria-hidden="true" focusable="false" class="">
+                                  <path
+                                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z">
+                                  </path>
+                                </svg></i></span></div>
+                          <div class="ant-input-number-input-wrap"><input role="spinbutton"
+                              aria-valuemin="-9007199254740991" aria-valuenow="" autocomplete="off"
+                              min="-9007199254740991" step="1" class="ant-input-number-input"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-v-531fec94="" class="unit">元</div>
+                  </div>
+                  <div data-v-531fec94="" class="input-item">
+                    <div data-v-531fec94="" class="input-label ant-form-item-required">利润总额</div>
+                    <div data-v-531fec94="" class="input-content">
+                      <div data-v-531fec94="" precision="2" style="position: relative; height: 32px;">
+                        <div class="ant-input-number">
+                          <div class="ant-input-number-handler-wrap"><span
+                              class="ant-input-number-handler ant-input-number-handler-up " unselectable="unselectable"
+                              role="button" aria-label="Increase Value"><i aria-label="图标: up"
+                                class="anticon anticon-up ant-input-number-handler-up-inner"><svg
+                                  viewBox="64 64 896 896" data-icon="up" width="1em" height="1em" fill="currentColor"
+                                  aria-hidden="true" focusable="false" class="">
+                                  <path
+                                    d="M890.5 755.3L537.9 269.2c-12.8-17.6-39-17.6-51.7 0L133.5 755.3A8 8 0 0 0 140 768h75c5.1 0 9.9-2.5 12.9-6.6L512 369.8l284.1 391.6c3 4.1 7.8 6.6 12.9 6.6h75c6.5 0 10.3-7.4 6.5-12.7z">
+                                  </path>
+                                </svg></i></span><span class="ant-input-number-handler ant-input-number-handler-down "
+                              unselectable="unselectable" role="button" aria-label="Decrease Value"><i
+                                aria-label="图标: down"
+                                class="anticon anticon-down ant-input-number-handler-down-inner"><svg
+                                  viewBox="64 64 896 896" data-icon="down" width="1em" height="1em" fill="currentColor"
+                                  aria-hidden="true" focusable="false" class="">
+                                  <path
+                                    d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z">
+                                  </path>
+                                </svg></i></span></div>
+                          <div class="ant-input-number-input-wrap"><input role="spinbutton"
+                              aria-valuemin="-9007199254740991" aria-valuenow="" autocomplete="off"
+                              min="-9007199254740991" step="1" class="ant-input-number-input"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-v-531fec94="" class="unit">元</div>
+                  </div>
+                  <div data-v-531fec94="" style="text-align: right;"><button data-v-531fec94="" type="button"
+                      class="ant-btn ant-btn-primary ant-btn-lg"><span>查 验</span></button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-v-531fec94="" class="result-wrapper"><!---->
+            <div data-v-531fec94="" class="content">
+              <div data-v-531fec94="" class="default-img"><img data-v-531fec94=""
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAAXNSR0IArs4c6QAAAMNQTFRFAAAAAAAAAAD/AP//AICAAID/AFWqAFX/AKr/VVWqVVX/Var/QIC/QID/M2bMM2b/M5nMM5n/KoDVKoD/JG3bJJLbIIDfQIDfHHHGOXHjOY7jOY7/M4DMM4DmLnToLovoRovoKoDVQIDqQJXqO4nYO4nrN4DbN4DtN5LtM4jdM4juMIDfMIDvMI/fMI/vLYfhPIfhPIfwOYDjOY7jOY7xNobkNobyM4DZM4DmM4zmM4zyMXnnMYbnPYbnOoDcOoDoOovoCX03igAAAEF0Uk5TAAEBAQICAwMDAwMDBAQFBQUFBgYHBwgICQkJCQoKCwsLDAwMDQ0ODg4PDxAQEBARERESEhITExQUFBQVFRUWFha/xOApAAACC0lEQVRIx6WV6VbCMBCFg1AXsIItUFELWKlsylKsphoh7/9U0kxoQpIWe5xfnDv5kplkuEXoKKxuuMTkh8RvQfsM/SG81Y6KIOPbU0Dvk6qxahUBjTU1xC7ML88j1BzvjRzC39G8SJpGop8t2K6Druu0/TEW13BjqupwBgnOM9GZZ+dYeueHPqZXR7oTc32tIRGvyVcT1VfOqJkeJ7rw/v4cf2e5KS9YKY03Okh/VwasyCxX4a8Vmg6Zp7/rvEZp6BI4piYjK9DqaT7tNwndc/nFYJMHSbrYiZPTM7QJgWtbSsod7HLNN7zPeWZSFcoLUzbplRK1TRaXsGdLbSVd6u37MM0tXEBPveK0nhmlI9MALtiKoRBgWNrQp2tCJmyFtNuWCS7AFybkRX1MqLRT8H+FoXlWr90vQNZiniBmTBgXINBtVwhPTMD5hCPemkcTFCcXge4TWfoCx8ojLKJXHtLCOwsNVdigxTUj0YFBj49V7iRLE3HNnaSnyD/cX/SZtLnHxGpixH0kUv2qc3Ar3MhxJZr4FdneppLL2qr3JYfUR/8SpDN3cmTsGnMjpfFiMp5ttA+BxtiYngqNsVblGeSbPkqYFDJWqEKRh+ykkEHV+4Wg8Ih9kE8xe9++9YbPYeB3MpM9zejxbwbXyjMBKs3EqDRDUGkmQqWZR/R35oMRM1QiakFMor0T/wLa396hB6qLngAAAABJRU5ErkJggg=="
+                  alt="">
+                <div data-v-531fec94="" style="margin-top: 10px;">暂无查询结果</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!----><!---->
+    </div>
+    <div data-v-34346690="" class="g-spin ant-spin-nested-loading" style="display: none;">
+      <div class="ant-spin-container">
+        <div data-v-34346690=""></div>
+      </div>
+    </div>
+  </div>
+  <script>// 判断是IE浏览器，则提示换浏览器
+    var userAgent = navigator.userAgent;  // 取得浏览器的 userAgent
+    var isIE = false
+    if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !userAgent.indexOf("Opera") > -1) {
+      isIE = true
+    }
+    if (navigator.appVersion.indexOf("MSIE") != -1) {
+      isIE = true
+    }
+    if (!!window.ActiveXObject || "ActiveXObject" in window) {
+      isIE = true
+    }
+    if ("\v" == "v") {
+      isIE = true
+    }
+    if (!-[1,]) {
+      isIE = true
+    }
+    if (isIE) {
+      document.getElementById('app').innerHTML = '<div style="text-align: center; margin-top: 30px; font-size: 18px; color: #f00;">' +
+        '系统暂不支持IE浏览器和360浏览器兼容模式，请使用360浏览器极速模式或谷歌浏览器' +
+        '</div>'
+    }</script>
+  <script src="/css/chunk-vue.22e791c1.js"></script>
+  <script src="/css/chunk-antd.e55fb7b0.js"></script>
+  <script src="/css/chunk-libs.877e3f48.js"></script>
+  <script src="/css/search.7578bbc7.js"></script>
+</body>
+
+</html>
